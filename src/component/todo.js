@@ -17,6 +17,14 @@ const ToDo = () => {
     const [isEditItem, setIsEditItem] = useState("");
     const [toggleBtn, setToggleBtn] = useState(false);
 
+    
+    
+    useEffect(() => {
+
+        document.title= `Expert List (${items.length})`;
+        // alert(`You Have ${items.length} Items In Your List`)
+    },);
+
 
     const addItem = () => {
         if(!inputdata){
