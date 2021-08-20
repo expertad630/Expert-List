@@ -13,6 +13,7 @@ html {
 }
 
 .main-div {
+  width: 100%;
   min-height: 100vh;
   background: #060822;
   display: flex;
@@ -21,8 +22,17 @@ html {
 }
 
 .child-div {
+  width: 50%;
+  margin: auto;
   text-align: center;
-  margin-top: 12rem;
+  margin-top: 10rem;
+  justify-content: center;
+}
+@media (max-width:700px){
+  .child-div{
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .child-div figure img {
@@ -39,15 +49,13 @@ html {
 
 input {
   /* display: block; */
-  min-width: 40rem;
+  width: 100%;
   height: 3.4rem;
-  padding: 2rem 1.2rem;
+  padding: 2rem 1rem;
   font-size: 1.8rem;
   line-height: 1.42857143;
-  margin-top: 2rem;
   color: rgb(58, 57, 57);
   background-color: #fff;
-  background-image: none;
   border: 0.1rem solid #ccc;
   border-radius: 0.4rem;
   -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
@@ -74,8 +82,6 @@ input:focus {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 
-/*  Please Subscribe to ThapaTechnical Youtube Channel
-/* Click Here: https://www.youtube.com/thapatechnical  */
 
 .todo-btn {
   width: 5rem;
@@ -84,12 +90,12 @@ input:focus {
 }
 
 .fa {
-  margin-left: -2.5rem;
+  margin-left: -11%;
+  margin-right: 6%;
   cursor: pointer;
   pointer-events: auto;
   z-index: 10;
   background-color: #fff;
-  background-image: none;
   color: #666;
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
@@ -98,6 +104,12 @@ input:focus {
 .fa:hover {
   color: rgb(47, 214, 122);
 }
+@media (max-width:700px){
+  .fa{
+    margin-left: -6.5%;
+    margin-right: 1%;
+  }
+}
 
 .fa-plus:before {
   content: "\f067";
@@ -105,17 +117,17 @@ input:focus {
 }
 
 .showItems {
+  width: 100%;
+  align-items: center;
   margin-top: 3rem;
   text-align: center;
 }
 
 .eachItem {
-  background: #fff;
   padding: 1.2rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 0.7rem;
-  margin-left: 1rem;
-  min-width: 40rem;
+  width: 100%;
   word-break: break-word;
   background: rgb(85, 41, 220);
   display: flex;
