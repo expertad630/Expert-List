@@ -160,11 +160,14 @@ input:focus {
 
 .addItems .fa-edit {
   color: rgb(47, 214, 122);
+  margin-left: -6.5rem;
+}
+@media (max-width: 700px){
+  .addItems .fa-edit {
+    margin-left: -3rem;
+  }
 }
 
-.fa-edit {
-  margin-left: -3.5rem;
-}
 
 /*  Please Subscribe to ThapaTechnical Youtube Channel
 /* Click Here: https://www.youtube.com/thapatechnical  */
